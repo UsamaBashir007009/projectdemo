@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <!--Logo Image-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/dp_169"
+            android:gravity="center"
+            android:layout_height="@dimen/dp_76"
+            android:layout_marginTop="@dimen/dp_30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.06"
+            app:srcCompat="@drawable/logo"
+            android:contentDescription="@string/logo" />
+
+        <!--SignUp and SignIn Buttons-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_30"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white">
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/left_rounded_signup"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white" />
+
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="@dimen/dp_100"
+                android:background="@drawable/right_rounded_signup"
+                android:text="@string/sign_in"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_20"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+        <!--Name Input-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="@dimen/dp_350"
+            android:gravity="center"
+            android:layout_height="@dimen/dp_49"
+            android:layout_marginTop="@dimen/dp_30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/enter_name"
+                android:inputType="text"
+                android:drawablePadding="@dimen/dp_5"
+                android:hint="@string/enter_name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Email Input-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="@dimen/dp_350"
+            android:layout_height="@dimen/dp_49"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/enter_email"
+                android:drawablePadding="@dimen/dp_5"
+                android:hint="@string/enter_email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Password Input-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="@dimen/dp_350"
+            android:gravity="center"
+            android:layout_height="@dimen/dp_49"
+            android:layout_marginTop="@dimen/dp_30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_password"
+                android:drawableStart="@drawable/pass2"
+                android:drawablePadding="@dimen/dp_5"
+                android:inputType="textPassword"
+                tools:ignore="RtlHardcoded" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Confirm Password Input-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout5"
+            android:layout_width="@dimen/dp_350"
+            android:layout_height="@dimen/dp_49"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/confirm_password"
+                android:drawableStart="@drawable/enter_pass"
+                android:drawablePadding="@dimen/dp_5"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Terms and Conditions CheckBox-->
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/Terms"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
+
+        <!--SignUp Button-->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/dp_162"
+            android:layout_height="@dimen/dp_71"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/abel"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <!--Already a Member TextView-->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:gravity="center"
+            android:text="@string/already_member"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <!--SignIn TextVew-->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <!--Extra Space for better Look-->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

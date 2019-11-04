@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TASKER</string>
+    <string name="logo">Logo</string>
+    <string name="Terms">I Agree to Terms and Conditions</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="enter_email">Enter Your Email</string>
+    <string name="enter_password">Enter Your Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="already_member">Already a Member?</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset">Reset</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="create_account">Create Account</string>
+    <string name="welcome">Hello There, Welcome Back!</string>
+    <string name="reset_description">Enter your email address and we\'ll send you a link to reset your password.</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="no_sign_in">Still can\'t sign in?</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="tab_text_1">JOBS</string>
+    <string name="tab_text_2">PROFILE</string>
+    <string name="tab_text_3">MY TASK</string>
+    <string name="ResetSuccess">Your Password has been Reset!</string>
+    <string name="Desc">Your password was reset as per your request. Your new password is \"12345\"</string>
+    <string name="HelpDescription">Enter your email address in the input field provided above and simply press \"Reset Password\" button to reset your password. Then your Password Will be reset to \"12345\"</string>
+    <string name="orangeColor">#FF5722</string>
+    <string name="blackColor">#000000</string>
+    <string name="profile_bio_icon_desc">Bio Icon</string>
+    <string name="profile_gender_F">Female</string>
+    <string name="profile_gender_M">Male</string>
+    <string name="profile_name_icon_desc">Name Icon</string>
+    <string name="profile_full_name">Alisa La Vista</string>
+    <string name="profile_email_icon_desc">Email icon</string>
+    <string name="profile_email">alisalavista@gmail.com</string>
+    <string name="profile_phone_icon_desc">Phone icon</string>
+    <string name="profile_gender_icon_desc">Gender Icon</string>
+    <string name="logout">Logout</string>
+    <string name="back_to_home">Back to Home</string>
+
+</resources>
